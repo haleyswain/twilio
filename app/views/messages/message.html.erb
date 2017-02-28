@@ -1,0 +1,10 @@
+<h1>Messages</h1>
+<%= @messages.each do |message| %>
+  <p>
+    <%= message.body %>
+  </p>
+<% end %>
+
+
+<h4>New Message</h4>
+<%= render 'form', message: Message.new %>
